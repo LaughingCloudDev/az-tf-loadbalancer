@@ -11,5 +11,5 @@ output "private_ip" {
 }
 
 output "subnet_id" {
-  value = azurerm_lb.tsp2-ilb.frontend_ip_configuration.subnet_id
+  value = azurerm_lb.tsp2-ilb.frontend_ip_configuration[0]
 }
