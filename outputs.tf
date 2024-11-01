@@ -1,15 +1,15 @@
 output "id" {
-  value = azurerm_storage_account.storage.id
+  value = azurerm_lb.tsp2-ilb.id
 }
 
 output "name" {
-  value = azurerm_storage_account.storage.name
+  value = azurerm_lb.tsp2-ilb.name
 }
 
-output "primary_blob_endpoint" {
-  value = azurerm_storage_account.storage.primary_blob_endpoint
+output "private_ip" {
+  value = azurerm_lb.tsp2-ilb.private_ip_address
 }
 
-output "primary_access_key" {
-  value = azurerm_storage_account.storage.primary_access_key
+output "subnet_id" {
+  value = azurerm_lb.tsp2-ilb.frontend_ip_configuration.subnet_id
 }
